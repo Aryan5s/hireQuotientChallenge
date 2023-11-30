@@ -113,4 +113,87 @@ POST api/v1/posts/createPost - Creates a New Post
 DELETE api/v1/posts/:postId - Deleted a Specific Post
 POST api/v1/posts/comment - Adds a comment on a Post
 ```
-# Get Post
+# Create Post
+- Takes Title And description from the frontend and create a New post and returns it
+```
+ {
+          id : uuidv4() created at the time of creation,
+          title : title recieved from frontend,
+          desc : description recieved from frontend,
+          user : ObjectId of mongoose,
+          created_at : Date of creation of post,
+          comments : Array of comments,
+          likes : Number of likes,
+          likedBy : Array of people who liked the Post
+        }
+```
+
+# Get Post :
+- takes PostId as a parameter and returns the corresponding Post :
+```
+ {
+          id : uuidv4() created at the time of creation,
+          title : title recieved from frontend,
+          desc : description recieved from frontend,
+          user : ObjectId of mongoose,
+          created_at : Date of creation of post,
+          comments : Array of comments,
+          likes : Number of likes,
+          likedBy : Array of people who liked the Post
+        }
+```
+# Get All Posts : 
+- Returns an array of all the posts in the DB
+```
+[
+ {
+          id : uuidv4() created at the time of creation,
+          title : title recieved from frontend,
+          desc : description recieved from frontend,
+          user : ObjectId of mongoose,
+          created_at : Date of creation of post,
+          comments : Array of comments,
+          likes : Number of likes,
+          likedBy : Array of people who liked the Post
+        },
+ {
+          id : uuidv4() created at the time of creation,
+          title : title recieved from frontend,
+          desc : description recieved from frontend,
+          user : ObjectId of mongoose,
+          created_at : Date of creation of post,
+          comments : Array of comments,
+          likes : Number of likes,
+          likedBy : Array of people who liked the Post
+        },
+ {
+          id : uuidv4() created at the time of creation,
+          title : title recieved from frontend,
+          desc : description recieved from frontend,
+          user : ObjectId of mongoose,
+          created_at : Date of creation of post,
+          comments : Array of comments,
+          likes : Number of likes,
+          likedBy : Array of people who liked the Post
+        },
+]
+```
+# Delete Post : 
+- takes the PostId in the parameters and returns the deletedPost
+```
+ {
+          id : uuidv4() created at the time of creation,
+          title : title recieved from frontend,
+          desc : description recieved from frontend,
+          user : ObjectId of mongoose,
+          created_at : Date of creation of post,
+          comments : Array of comments,
+          likes : Number of likes,
+          likedBy : Array of people who liked the Post
+        }
+ ```
+# Add Comment :
+- takes in comment from the frontend creates a new comment and stores it in the post.comments array and returns the commentID
+```
+{ commentId : commentId}
+``` 
