@@ -59,7 +59,7 @@ POST /api/v1/auth/register - Used to Register a New User
 POST /api/v1/auth/login - Used to Login already Registered User
 POST /api/v1/auth/logout - Used to Logout Users
 ```
-# REGISTER USER :
+# Register User :
 Register takes a POST request with Three parameters name, email, password and gives you the newly created User
 ```
 {_id : Sample Object ID,
