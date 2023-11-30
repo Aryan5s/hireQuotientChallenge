@@ -113,7 +113,7 @@ POST api/v1/posts/createPost - Creates a New Post
 DELETE api/v1/posts/:postId - Deleted a Specific Post
 POST api/v1/posts/comment - Adds a comment on a Post
 ```
-# Create Post
+# Create Post :
 - Takes Title And description from the frontend and create a New post and returns it
 ```
  {
